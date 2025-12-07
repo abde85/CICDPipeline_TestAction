@@ -33,3 +33,5 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: CICDPipeline_TestAction/Dockerfile # e.g., 'src/DemoApp/Dockerfile'
+        context: .
